@@ -1,0 +1,16 @@
+<assembly>
+  <baseDirectory>/</baseDirectory>
+  <id>linux-jdk-assembly</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+
+        <fileSets>
+         <fileSet>
+                     <directory>${project.basedir}/jdk</directory>
+                     <outputDirectory>/opt/dochack/jdk</outputDirectory>
+                     <fileMode>0755</fileMode>
+              </fileSet>
+        </fileSets>
+
+</assembly>
